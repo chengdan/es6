@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>hdiwknxksanxsjxksd</div>
+</body>
+</html>
+
+
+<script src="../node_modules/babel-core/browser.js"></script>
+<script src="list.js" type="text/babel"></script>
+<script src="all.js" type="text/babel"></script>
+<script type="text/babel">
+    let name = '张三';
+    const age = '18岁';
+    let factory = function () {
+        this.a = 'a';
+        this.b = 'b';
+        this.c = {
+            a: 'a+',
+            b: () => {                  //箭头函数的this, 定义是的对象
+                return this.a
+            }
+        }
+    };
+    console.log(new factory().c.b());
+    alert(name,age);
+    console.log("%c我也来打个广告","color:red");
+</script>
